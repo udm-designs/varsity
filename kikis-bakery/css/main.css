@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+/* 
+TABLE OF CONTENTS
+1. General Styles
+2. Header and Navigation
+*/
+/* 1. General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, .link-btn {
+    font-family: 'Abril Fatface', cursive;
+}
+p, a, li, blockquote, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+}
+.contain {
+    width: 90vw;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.link-btn, .link-btn:visited {
+    display: block;
+    border: 4px solid #f2f2f2;
+    color: #f2f2f2;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .6s;
+}
+.link-btn:hover {
+    background-color: #f2f2f2;
+    color: #ff9900;
+}
+/* 2. Header and Navigaion */
+header {
+    
+}
