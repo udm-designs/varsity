@@ -17,7 +17,7 @@ p, a, li, blockquote, h4, h5 {
     font-family: 'Poppins', sans-serif;
 }
 .contain {
-    width: 90vw;
+    width: 85vw;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -36,5 +36,53 @@ p, a, li, blockquote, h4, h5 {
 }
 /* 2. Header and Navigaion */
 header {
-    
+    background: linear-gradient(180deg, #14202D 0%, rgba(20, 32, 45, .5) 100%), url(../images/strawberry-cake.jpg), lightgrey 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav {
+    padding: 25px 0px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+}
+nav ul #logo {
+    width: 50%;
+}
+nav ul #logo a svg {
+    width: 100%;
+}
+nav ul #mob-menu {
+    cursor: pointer;
+}
+nav ul li svg path {
+    transition: fill .5s ease-in-out;
+}
+nav ul li:hover svg path {
+    fill: #ff9900;
+}
+nav ul #mob-menu ~ .nav-links {
+    position: absolute;
+    top: 55px;
+    padding: 1rem 1.25rem; 
+    background: rgba(13, 13, 13, 0.75);
+    backdrop-filter: blur(4px);
+}
+nav ul #mob-menu ~ .nav-links ul {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.125rem;
+}
+nav ul #mob-menu ~ .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color .5s ease-in-out;
+}
+nav ul #mob-menu ~ .nav-links ul li a:hover {
+    color: #ff9900;
 }
