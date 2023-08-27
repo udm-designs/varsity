@@ -3,6 +3,8 @@
 TABLE OF CONTENTS
 1. General Styles
 2. Header and Navigation
+3. Hero
+4. Section 1: Carousel
 */
 /* 1. General Styles */
 * {
@@ -15,10 +17,16 @@ h1, h2, h3, .link-btn {
 }
 p, a, li, blockquote, h4, h5 {
     font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .contain {
     width: 85vw;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .link-btn, .link-btn:visited {
@@ -34,11 +42,20 @@ p, a, li, blockquote, h4, h5 {
     background-color: #f2f2f2;
     color: #ff9900;
 }
+.link-btn.alt, .link-btn.alt:visited {
+    border-color: #ff9900;
+    color: #ff9900;
+}
+.link-btn.alt:hover {
+    background-color: #ff9900;
+    color: #f2f2f2;
+}
 /* 2. Header and Navigaion */
 header {
     background: linear-gradient(180deg, #14202D 0%, rgba(20, 32, 45, .5) 100%), url(../images/strawberry-cake.jpg), lightgrey 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 nav {
     padding: 25px 0px;
@@ -83,4 +100,51 @@ nav ul #mob-menu .nav-links li a {
 }
 nav ul #mob-menu .nav-links li a:hover {
     color: #ff9900;
+}
+
+/* 3. Hero */
+#hero-content {
+    color: #f2f2f2;
+    margin-top: 3rem;
+}
+#hero-content h1 {
+    font-size: 3.5rem;
+    margin: .125rem 0px 1rem;
+    font-weight: 400;
+}
+#hero-content .link-btn {
+    font-size: 1.5rem;
+}
+#hero-content p {
+    font-style: italic;
+}
+
+/* 4. Section 1: Carousel */
+main .carousel-container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+}
+.carousel-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.carousel {
+    display: flex;
+}
+.carousel .carousel-item {
+    display: block;
+    color: #131313;
+    text-decoration: none;
+    max-width: 500px;
+    flex: 1;
+}
+/* HOVER EFFECT HERE!!! */
+.carousel-item img {
+    display: block;
+    height: 325px;
+}
+.carousel-item h3 {
+    margin: 1rem 0 .5rem;
 }
