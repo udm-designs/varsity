@@ -5,6 +5,7 @@ TABLE OF CONTENTS
 2. Header and Navigation
 3. Hero
 4. Section 1: Carousel
+5. Footer
 */
 /* 1. General Styles */
 * {
@@ -182,4 +183,39 @@ main .carousel-container {
 }
 .carousel-item:hover img {
     filter: saturate(200%);
+}
+
+/* 5. Footer */
+footer {
+    background-color: #14202D;
+    color: #f2f2f2;
+}
+
+footer .foot-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.25rem 0px;
+}
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: color .5s;
+}
+footer ul li a:hover {
+    color: #ff9900;
+}
+
+footer div .logo {
+    text-align: center;
+    display: block;
+}
+footer div p {
+    text-align: center;
 }
