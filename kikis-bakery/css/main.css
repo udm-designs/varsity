@@ -132,19 +132,54 @@ main .carousel-container {
 }
 .carousel {
     display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+    width: 100%;
+    scrollbar-color: #141414 #c5c5c5; 
+    scrollbar-width: thin;
 }
+/* width */
+.carousel::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+.carousel::-webkit-scrollbar-track {
+    background: #c5c5c5;
+    border: 5px solid white;
+}
+/* Handle */
+.carousel::-webkit-scrollbar-thumb {
+    background: #14202D;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff9900;
+}
+
 .carousel .carousel-item {
     display: block;
     color: #131313;
     text-decoration: none;
+    min-width: 100%; /* Change this in the media query*/
     max-width: 500px;
-    flex: 1;
+    padding-bottom: 1.25rem;
 }
-/* HOVER EFFECT HERE!!! */
+
 .carousel-item img {
     display: block;
     height: 325px;
+    transition: all .5s;
 }
 .carousel-item h3 {
     margin: 1rem 0 .5rem;
+    transition: all .5s;
+}
+
+.carousel-item:hover h3 {
+    color: #ff9900;
+}
+.carousel-item:hover img {
+    filter: saturate(200%);
 }
