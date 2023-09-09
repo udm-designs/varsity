@@ -263,6 +263,29 @@ footer div p {
 }
 
 @media screen and (min-width: 1024px) {
+    header {
+        background: linear-gradient(-90deg, #14202D 25%, rgba(20, 32, 45, .5) 100%), url(../images/strawberry-cake.jpg), lightgrey 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    nav ul {
+        align-items: center;
+    }
+    #mob-menu {
+        order: 2;
+    }
+    #mob-menu .nav-links {
+        padding: 0px 1.125rem 0px 0px;
+    }
+    nav ul #logo {
+        order: 1;
+        margin: 0px auto 0px 0px;
+        width: auto;
+    }
+    nav ul li:last-child {
+        order: 3;
+    }
     #mob-menu svg {
         display: none;
     }
@@ -275,6 +298,21 @@ footer div p {
         flex-flow: row nowrap;
         background-color: transparent;
     }
+    #hero-content .link-btn {
+        display: inline-block;
+    }
+    #hero-content {
+        width: max-content;
+    }
+    /* header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #hero-content p, #hero-content h1, #hero-content .link-btn {
+        margin-left: auto;
+        width: max-content;
+    } */
 }
 
 
