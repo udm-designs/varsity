@@ -92,10 +92,10 @@ nav ul #logo a svg {
 nav ul #mob-menu {
     cursor: pointer;
 }
-nav ul li svg path {
+nav ul li svg path, footer svg path {
     transition: fill .5s ease-in-out;
 }
-nav ul li:hover svg path {
+nav ul li:hover svg path, footer svg:hover path {
     fill: #ff9900;
 }
 nav ul #mob-menu:hover .nav-links {
@@ -313,6 +313,37 @@ footer div p {
         margin-left: auto;
         width: max-content;
     } */
+    .carousel .carousel-item {
+        min-width: 33.33%;
+    }
+    .carousel-container h2 {
+        order: 1;
+    }
+    .carousel-container a {
+        order: 3;
+    }
+    .carousel-container .carousel {
+        order: 2;
+    }
+    footer .contain {
+        display: grid;
+        grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
+        grid-template-rows: max-content max-content;
+        grid-template-areas:
+            "links cat"
+            "copy cat"
+        ;
+    }
+    .foot-links {
+        flex-direction: column;
+        grid-area: links;
+    }
+    footer .logo {
+        grid-area: cat;
+    }
+    footer div p {
+        grid-area: copy;
+        text-align: left;
+        margin-top: 1.25rem;
+    }
 }
-
-
